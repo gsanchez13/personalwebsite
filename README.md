@@ -12,3 +12,6 @@
 
 
 ![Projects Wireframe](./projects-wireframe.png)
+
+
+![Skills Wireframe](./skills-wireframe.png)
