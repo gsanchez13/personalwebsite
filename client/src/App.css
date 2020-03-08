@@ -75,5 +75,12 @@
   align-self: center;
   margin: 30px;
   height: 20px;
-  width: 100%
+  width: 100%;
+}
+.footer {
+  width: 3g0%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
