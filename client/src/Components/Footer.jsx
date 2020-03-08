@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-import { IoLogoGithub } from 'react-icons/io'
+import { IoLogoGithub } from 'react-icons/io';
+import { GoFile } from 'react-icons/go';
+import Pdf from './Resume.pdf';
 
 class Footer extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div className="footer">
-                <FaLinkedin />
+                <a href="https://www.linkedin.com/in/giselle-sanchez13" target="_self" rel="noopener norefferrer">
+                    <FaLinkedin /></a>
                 <AiOutlineMail />
-                <IoLogoGithub />
+                <a href="https://github.com/gsanchez13" target="_self" rel="noopener norefferrer">
+                    <IoLogoGithub />
+                </a>
+                <a href={Pdf} target="_blank" rel="noopener noreferrer">
+                    <GoFile />
+                </a>
             </div>
         )
     }
