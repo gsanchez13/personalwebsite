@@ -11,7 +11,9 @@ class Footer extends Component {
             <div className="footer">
                 <a href="https://www.linkedin.com/in/giselle-sanchez13" target="_self" rel="noopener norefferrer">
                     <FaLinkedin /></a>
+                <a href="mailto:gisellesanchez@pursuit.org?subject=Important!&body=Hi">
                 <AiOutlineMail />
+                </a>
                 <a href="https://github.com/gsanchez13" target="_self" rel="noopener norefferrer">
                     <IoLogoGithub />
                 </a>
