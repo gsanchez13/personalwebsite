@@ -90,3 +90,45 @@
 .footer > a:hover {
   color: skyblue;
 }
+.content-container {
+  width: 50%
+}
+.about-div {
+  width: 100%;
+  text-align: left;
+}
+.gif-container {
+  position: relative;
+  animation:go 10s infinite alternate-reverse;
+}
+
+.soccer-ball {
+  /* display: inline-block; */
+  /* padding: 20px; */
+  /* color: white; */
+  position: relative;
+  /* margin: 0 0 10px 0; */
+  animation:spin 4s linear infinite;
+}
+/* .roll {
+  animation:go 10s infinite alternate;
+} */
+@keyframes spin { 
+  100% { 
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+  }
+}
+
+@keyframes go {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* @keyframes go {
+  from { right: 0px }
+  to   { right: 10px }
+} */
