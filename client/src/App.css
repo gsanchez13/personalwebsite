@@ -99,16 +99,16 @@
 }
 .gif-container {
   position: relative;
-  animation:go 10s infinite alternate-reverse;
+  animation:go 10s ease-in 1 normal 
 }
 
 .soccer-ball {
   /* display: inline-block; */
   /* padding: 20px; */
   /* color: white; */
-  position: relative;
+  /* position: relative; */
   /* margin: 0 0 10px 0; */
-  animation:spin 4s linear infinite;
+  animation:spin 1s linear infinite;
 }
 /* .roll {
   animation:go 10s infinite alternate;
