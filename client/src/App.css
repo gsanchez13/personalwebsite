@@ -76,6 +76,7 @@
   margin: 30px;
   height: 20px;
   width: 100%;
+  font-size: 20px;
 }
 .footer {
   width: 30%;
@@ -93,32 +94,31 @@
 .content-container {
   width: 50%
 }
+.about-blurb {
+  text-align: center;
+}
 .about-div {
   width: 100%;
   text-align: left;
+  display: flex;
+  flex-flow: column;
+}
+.route {
+  width: 30%;
+  align-self: center;
 }
 .gif-container {
   position: relative;
-  animation:go 10s ease-in 1 normal 
+  animation:go 4s 1 normal 
 }
-
 .soccer-ball {
-  /* display: inline-block; */
-  /* padding: 20px; */
-  /* color: white; */
-  /* position: relative; */
-  /* margin: 0 0 10px 0; */
-  animation:spin 1s linear infinite;
+  animation:spin .5s linear infinite;
 }
-/* .roll {
-  animation:go 10s infinite alternate;
-} */
 @keyframes spin { 
   100% { 
     -webkit-transform: rotate(360deg); transform:rotate(360deg);
   }
 }
-
 @keyframes go {
   0% {
     left: 0;
@@ -128,7 +128,43 @@
   }
 }
 
-/* @keyframes go {
-  from { right: 0px }
-  to   { right: 10px }
-} */
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 25px;
+  height: 14px;
+  background: lightgrey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+}
