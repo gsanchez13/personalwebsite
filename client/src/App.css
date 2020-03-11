@@ -94,6 +94,13 @@
 .content-container {
   width: 50%
 }
+.skills-div {
+  font-size: 10vh;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .about-blurb {
   text-align: center;
 }
@@ -109,7 +116,7 @@
 }
 .gif-container {
   position: relative;
-  animation:go 4s 1 normal 
+  animation:go 4s infinite normal;
 }
 .soccer-ball {
   animation:spin .5s linear infinite;
