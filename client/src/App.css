@@ -89,17 +89,23 @@
   color: black;
 }
 .footer > a:hover {
-  color: skyblue;
+  color: teal;
 }
 .content-container {
   width: 50%
 }
 .skills-div {
-  font-size: 10vh;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.skills-icon-div{
+  display: flex;
+  flex-flow: column;
+}
+.iconClass {
+  font-size: 30px;
 }
 .about-blurb {
   text-align: center;
@@ -174,4 +180,12 @@
 
 .react-switch-label:active .react-switch-button {
   width: 60px;
+}
+
+.projects-div {
+  width: 50%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: solid black 1px; */
 }
