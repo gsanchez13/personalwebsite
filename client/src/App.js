@@ -5,14 +5,14 @@ import NavBar from './Components/NavBar';
 import Landing from './Components/Landing';
 import About from './Components/About';
 import Projects from './Components/Projects';
-import Skills from './Components/Skills';
+// import Skills from './Components/Skills';
 import Footer from './Components/Footer';
 import SwitchBox from'./Components/Switch';
 
 function App() {
   return (
     <div className="App">
-      <SwitchBox/>
+      {/* <SwitchBox/> */}
         <div className="logo-container">
           <Link to="/">
             <img src={require('./giselle.png')} alt="logo" className="logo" />
