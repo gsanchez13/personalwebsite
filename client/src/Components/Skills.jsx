@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
-import { DiPostgresql, DiJavascript1 } from 'react-icons/di';
+import { DiPostgresql, DiJavascript1, DiCss3 } from 'react-icons/di';
 import { TiHtml5 } from 'react-icons/ti';
 
 class Skills extends Component {
@@ -19,7 +19,7 @@ class Skills extends Component {
                 class: "iconClass"
             }, {
                 icon: FaGitAlt,
-                color: "green",
+                color: "darkgreen",
                 caption: "Git",
                 class: "iconClass"
             }, {
@@ -30,13 +30,19 @@ class Skills extends Component {
             }, {
                 icon: DiJavascript1,
                 color: "rgb(177, 160, 7)",
-                caption: "JavaScript",
+                caption: "darkyellow",
                 class: "iconClass"
             }, {
                 icon: TiHtml5,
-                color: "red",
+                color: "darkorange",
                 caption: "HTML5",
                 class: "iconClass"
+            },
+            {   
+                icon: DiCss3,
+                color: "lightblue",
+                caption: "CSS3",
+                class: "iconClass" 
             }
         ]
         const jsxIcons = iconArr.map((el) => {
