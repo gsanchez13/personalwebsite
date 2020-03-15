@@ -11,15 +11,9 @@ class Skills extends Component {
                 color: "rgb(104, 241, 241)",
                 caption: "React",
                 class: "iconClass"
-            },
-            {
-                icon: FaNodeJs,
-                color: "darkblue",
-                caption: "NodeJS",
-                class: "iconClass"
             }, {
                 icon: FaGitAlt,
-                color: "darkgreen",
+                color: "black",
                 caption: "Git",
                 class: "iconClass"
             }, {
@@ -30,20 +24,24 @@ class Skills extends Component {
             }, {
                 icon: DiJavascript1,
                 color: "rgb(177, 160, 7)",
-                caption: "darkyellow",
+                caption: "JavaScript",
                 class: "iconClass"
             }, {
                 icon: TiHtml5,
                 color: "darkorange",
                 caption: "HTML5",
                 class: "iconClass"
-            },
-            {   
+            }, {   
                 icon: DiCss3,
                 color: "lightblue",
                 caption: "CSS3",
                 class: "iconClass" 
-            }
+            }, {
+                icon: FaNodeJs,
+                color: "green",
+                caption: "NodeJS",
+                class: "iconClass"
+            },
         ]
         const jsxIcons = iconArr.map((el) => {
             return (
