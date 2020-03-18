@@ -7,15 +7,38 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
-// import SwitchBox from'./Components/Switch';
+// import SwitchBox from './Components/Switch';
 
-function App() {
-  return (
-    <div className="App">
-      {/* <SwitchBox/> */}
+class App extends React.Component {
+  constructor () {
+    super() 
+    this.state = {
+      mode: "light",
+      logo: require('./giselle.png')
+    }
+  }
+  changeTheme = () => {
+    if(this.state.mode === "light") {
+      this.setState({
+        mode: "dark",
+        logo: require('./giselledark.png')
+      })
+    }
+    else {
+      this.setState({
+        mode: "light",
+        logo: require('./giselle.png')
+      })
+    }
+  };
+  render() {
+    const { logo } = this.state;
+    return (
+      <div className="App" >
+        <button onClick={this.changeTheme} className="switch-box">Change my Theme!</button>
         <div className="logo-container">
           <Link to="/">
-            <img src={require('./giselle.png')} alt="logo" className="logo" />
+            <img src={logo} alt="logo" className="logo" />
           </Link>
         </div>
         <div className="nav-container">
@@ -32,8 +55,9 @@ function App() {
         <div className="footer-container">
           <Footer />
         </div>
-    </div>
-      );
-    }
-    
-    export default App;
+      </div>
+    )
+  }
+}
+
+export default App;

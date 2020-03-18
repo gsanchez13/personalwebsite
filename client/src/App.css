@@ -105,7 +105,7 @@
   flex-flow: column;
 }
 .iconClass {
-  font-size: 30px;
+  font-size: 9vh;
 }
 .about-blurb {
   text-align: center;
@@ -140,7 +140,11 @@
     left: 100%;
   }
 }
+.switch-box {
+  width: 10%
+}
 
+/* 
 .react-switch-checkbox {
   height: 0;
   width: 0;
@@ -180,7 +184,7 @@
 
 .react-switch-label:active .react-switch-button {
   width: 60px;
-}
+} */
 
 .projects-div {
   width: 50%;
