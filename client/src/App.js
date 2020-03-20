@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Landing from './Components/Landing';
@@ -7,34 +7,38 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
-// import SwitchBox from './Components/Switch';
+import { ThemeProvider } from 'styled-components';
+import {lightTheme, darkTheme } from './theme.js';
+import { GlobalStyles } from './global.js';
 
 class App extends React.Component {
   constructor () {
     super() 
     this.state = {
-      mode: "light",
+      theme: "light",
       logo: require('./giselle.png')
     }
   }
   changeTheme = () => {
-    if(this.state.mode === "light") {
+    if(this.state.theme === "light") {
       this.setState({
-        mode: "dark",
+        theme: "dark",
         logo: require('./giselledark.png')
       })
     }
     else {
       this.setState({
-        mode: "light",
+        theme: "light",
         logo: require('./giselle.png')
       })
     }
   };
   render() {
-    const { logo } = this.state;
+    const { logo, theme } = this.state;
     return (
       <div className="App" >
+        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme} >
+          <GlobalStyles />
         <button onClick={this.changeTheme} className="switch-box">Change my Theme!</button>
         <div className="logo-container">
           <Link to="/">
@@ -55,6 +59,7 @@ class App extends React.Component {
         <div className="footer-container">
           <Footer />
         </div>
+        </ThemeProvider>
       </div>
     )
   }
