@@ -1,16 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-*, 
-*::after,
-*::before{
-    box-sizing: border-box;
-}
+// *, 
+// *::after,
+// *::before{
+//     box-sizing: border-box;
+// }
 .App {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
+    height: 100%
+  }
+  body, #root, html{
+    height: 100%
   }
   .logo {
     align-self: flex-start;
@@ -36,20 +40,21 @@ export const GlobalStyles = createGlobalStyle`
     color: skyblue;
   }
   .content-container {
-    padding: 30px;;
+    padding: 30px;
     margin: auto;
+    height: 100%;
+    width: 50%;
+    overflow: auto
   }
   .footer-container {
-    align-self: center;
-    margin: 30px;
-    height: 20px;
+    align-self: baseline;
+    margin: 30px auto 30px auto;
     width: 100%;
     font-size: 20px;
-    position: relative;
-    bottom: 0%
+    bottom: 0;
   }
   .footer {
-    width: 30%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -61,11 +66,10 @@ export const GlobalStyles = createGlobalStyle`
   .footer > a:hover {
     color: teal;
   }
-  .content-container {
-    width: 50%
-  }
+
   .skills-div {
     display: flex;
+    flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
@@ -110,7 +114,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   .switch-box {
-    width: 10%
+    width: 10%;
   }
   
   .projects-div {
