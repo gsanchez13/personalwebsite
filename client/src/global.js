@@ -11,7 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
-    height: 100vh;
   }
   .logo {
     align-self: flex-start;
@@ -46,6 +45,8 @@ export const GlobalStyles = createGlobalStyle`
     height: 20px;
     width: 100%;
     font-size: 20px;
+    position: relative;
+    bottom: 0%
   }
   .footer {
     width: 30%;
@@ -65,7 +66,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   .skills-div {
     display: flex;
-    flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
