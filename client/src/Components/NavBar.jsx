@@ -5,7 +5,7 @@ import Pdf from './Resume.pdf';
 class NavBar extends Component {
     render() {
         return (
-            <div className="nav-bar">
+            <div className={this.props.class}>
                 <a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>{" "}
                 <Link to="/about"> About </Link>{" "}
                 <Link to="/projects"> Projects </Link>{" "}

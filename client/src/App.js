@@ -14,28 +14,31 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      theme: "light",
-      logo: require('./giselle.png')
+      theme: 'light',
+      logo: require('./giselle.png'),
+      navName: 'light-nav'
     }
   }
   changeTheme = () => {
-    if (this.state.theme === "light") {
+    if (this.state.theme === 'light') {
       this.setState({
-        theme: "dark",
-        logo: require('./giselledark.png')
+        theme: 'dark',
+        logo: require('./giselledark.png'),
+        navName: 'dark-nav',
       })
     }
     else {
       this.setState({
-        theme: "light",
-        logo: require('./giselle.png')
+        theme: 'light',
+        logo: require('./giselle.png'),
+        navName: 'light-nav',
       })
     }
   };
   render() {
-    const { logo, theme } = this.state;
+    const { logo, theme, navName } = this.state;
     return (
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme} >
+      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
           <GlobalStyles />
           <button onClick={this.changeTheme} className="switch-box">Change my Theme!</button>
@@ -45,7 +48,7 @@ class App extends React.Component {
             </Link>
           </div>
           <div className="nav-container">
-            <NavBar />
+            <NavBar class={navName}/>
           </div>
           <div className="content-container">
             <Switch>

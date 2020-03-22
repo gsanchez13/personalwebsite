@@ -1,17 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-// *, 
-// *::after,
-// *::before{
-//     box-sizing: border-box;
-// }
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
 .App {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
-    height: 100%
+    height: 100%;
+    margin: auto
   }
   body, #root, html{
     height: 100%
@@ -23,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   .nav-container {
     width: 100%;
   }
-  .nav-bar {
+  .light-nav {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
@@ -32,15 +33,31 @@ export const GlobalStyles = createGlobalStyle`
     border-top: solid 2px rgb(182, 176, 176);
     border-bottom: solid 2px rgb(182, 176, 176);
   }
-  .nav-bar > a {
+  .light-nav > a {
     color: black;
     text-decoration: none;
   }
-  .nav-bar > a:hover{
+  .light-nav > a:hover{
     color: skyblue;
   }
+  .dark-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+    border-top: solid 2px rgb(182, 176, 176);
+    border-bottom: solid 2px rgb(182, 176, 176);
+  }
+  .dark-nav > a {
+    color: white;
+    text-decoration: none;
+  }
+  .dark-nav > a:hover{
+    color: yellow;
+  }
   .content-container {
-    padding: 30px;
+    padding-top: 10%;
     margin: auto;
     height: 100%;
     width: 50%;
@@ -54,7 +71,7 @@ export const GlobalStyles = createGlobalStyle`
     bottom: 0;
   }
   .footer {
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
