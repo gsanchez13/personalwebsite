@@ -6,9 +6,10 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
+import Toggle from './Components/Toggle';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './theme.js';
-import { GlobalStyles } from './global.js';
+import { lightTheme, darkTheme } from './styling-files/theme.js';
+import { GlobalStyles } from './styling-files/global.js';
 
 class App extends React.Component {
   constructor() {
@@ -41,7 +42,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
           <GlobalStyles />
-          <button onClick={this.changeTheme} className="switch-box">Change my Theme!</button>
+          <Toggle theme={theme} toggleTheme={this.changeTheme}/>
           <div className="logo-container">
             <Link to="/">
               <img src={logo} alt="logo" className="logo" />
