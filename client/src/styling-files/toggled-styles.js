@@ -20,12 +20,12 @@ const ToggleContainer = styled.button`
     width: 30%;
     transition: all 0.3s linear;
     
-    sun icon
+    IoIosSunny
     &:first-child {
       transform: ${({ lightTheme }) => lightTheme ? 'translateY(0)' : 'translateY(100px)'};
     }
     
-    moon icon
+    IoIosMoon
     &:nth-child(2) {
       transform: ${({ lightTheme }) => lightTheme ? 'translateY(-100px)' : 'translateY(0)'};
     }

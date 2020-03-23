@@ -1,10 +1,9 @@
 import React from 'react';
 import ToggleContainer from '../styling-files/toggled-styles';
-import { func, string } from 'prop-types';
+// import { func, string } from 'prop-types';
 import { IoIosSunny, IoIosMoon } from 'react-icons/io';
 
-const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === 'light';
+const Toggle = ({ toggleTheme }) => {
   return (
     <ToggleContainer onClick={toggleTheme}>
       <IoIosSunny style={{color: "yellow"}}/>
@@ -13,9 +12,9 @@ const Toggle = ({ theme, toggleTheme }) => {
   );
 };
 
-Toggle.propTypes = {
-  theme: string.isRequired,
-  toggleTheme: func.isRequired,
-}
+// Toggle.propTypes = {
+//   theme: string.isRequired,
+//   toggleTheme: func.isRequired,
+// }
 
 export default Toggle;
