@@ -12,7 +12,8 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: space-evenly;
     flex-flow: column;
     height: 100%;
-    margin: auto
+    margin: auto;
+    font-family: 'Baloo 2', cursive;
   }
   body, #root, html{
     height: 100%
@@ -36,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-bottom: 10px;
   }
   .light-nav > a {
-    color: black;
+    color: gray;
     text-decoration: none;
   }
   .light-nav > a:hover{
@@ -61,7 +62,7 @@ export const GlobalStyles = createGlobalStyle`
     color: yellow;
   }
   .content-container {
-    padding-top: 10%;
+    padding-top: 5%;
     margin: auto;
     height: 100%;
     width: 50%;
