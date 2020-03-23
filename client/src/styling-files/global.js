@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Baloo 2', cursive;
   }
   body, #root, html{
-    height: 100%
+    height: 100%;
   }
   .logo {
     align-self: flex-start;
@@ -35,6 +35,14 @@ export const GlobalStyles = createGlobalStyle`
     border-bottom: solid 2px rgb(182, 176, 176);
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .light-nav {
+      font-size: 10px;
+    }
+    .dark-nav {
+      font-size: 10px;
+    }
   }
   .light-nav > a {
     color: gray;
@@ -66,7 +74,13 @@ export const GlobalStyles = createGlobalStyle`
     margin: auto;
     height: 100%;
     width: 50%;
-    overflow: auto
+    overflow: auto;
+    font-size: 2.5vh;
+  }
+  @media screen and (max-width: 600px) {
+    .content-container {
+      font-size: 2vh;
+    }
   }
   .footer-container {
     align-self: baseline;
@@ -135,10 +149,6 @@ export const GlobalStyles = createGlobalStyle`
       left: 100%;
     }
   }
-  .switch-box {
-    width: 10%;
-  }
-  
   .projects-div {
     width: 50%;
     display: flex;
@@ -147,7 +157,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    align-items: center;
+    // align-items: center;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     margin: 0;
