@@ -79,30 +79,47 @@ export const GlobalStyles = createGlobalStyle`
   }
   @media screen and (max-width: 600px) {
     .content-container {
-      font-size: 2vh;
+      font-size: 15px;
     }
   }
   .footer-container {
     align-self: baseline;
     margin: 30px auto 30px auto;
     width: 100%;
-    font-size: 20px;
+    font-size: 3vh;
     bottom: 0;
   }
-  .footer {
+  @media screen and (max-width: 600px) {
+    .footer-container {
+      font-size: 2vh;
+    }
+  }
+  .light-footer {
     width: 50%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .footer > a {
+  .light-footer > a {
     color: black;
   }
-  .footer > a:hover {
+  .light-footer > a:hover {
     color: teal;
   }
-
+  .dark-footer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .dark-footer > a {
+    color: white;
+  }
+  .dark-footer > a:hover {
+    color: teal;
+  }
   .skills-div {
     display: flex;
     flex-flow: row;
@@ -138,7 +155,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   @keyframes spin { 
     100% { 
-      -webkit-transform: rotate(360deg); transform:rotate(360deg);
+      -webkit-transform: rotate(360deg); transform:rotate(360deg)
     }
   }
   @keyframes go {
@@ -157,7 +174,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    // align-items: center;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     margin: 0;

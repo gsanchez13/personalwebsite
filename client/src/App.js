@@ -17,7 +17,8 @@ class App extends React.Component {
     this.state = {
       theme: 'light',
       logo: require('./giselle.png'),
-      navName: 'light-nav'
+      navName: 'light-nav',
+      footerName: 'light-footer',
     }
   }
   changeTheme = () => {
@@ -26,6 +27,7 @@ class App extends React.Component {
         theme: 'dark',
         logo: require('./giselledark.png'),
         navName: 'dark-nav',
+        footerName: 'dark-footer',
       })
     }
     else {
@@ -33,11 +35,12 @@ class App extends React.Component {
         theme: 'light',
         logo: require('./giselle.png'),
         navName: 'light-nav',
+        footerName: 'light-footer',
       })
     }
   };
   render() {
-    const { logo, theme, navName } = this.state;
+    const { logo, theme, navName, footerName } = this.state;
     return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
@@ -59,8 +62,8 @@ class App extends React.Component {
               <Route exact path="/skills" component={Skills} />
             </Switch>
           </div>
-          <div className="footer-container">
-            <Footer />
+          <div className={'footer-container'}>
+            <Footer class={footerName}/>
           </div>
         </div>
       </ThemeProvider>
