@@ -32,6 +32,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: auto;
     border-top: solid 2px rgb(182, 176, 176);
     border-bottom: solid 2px rgb(182, 176, 176);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .light-nav > a {
     color: black;
@@ -48,6 +50,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: auto;
     border-top: solid 2px rgb(182, 176, 176);
     border-bottom: solid 2px rgb(182, 176, 176);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .dark-nav > a {
     color: white;
