@@ -19,17 +19,7 @@ const ToggleContainer = styled.button`
     height: 100%;
     width: 30%;
     transition: all 0.3s linear;
-    
-    IoIosSunny
-    &:first-child {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(0)' : 'translateY(100px)'};
-    }
-    
-    IoIosMoon
-    &:nth-child(2) {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(-100px)' : 'translateY(0)'};
-    }
-  }
+  } 
 `;
 
 export default ToggleContainer;

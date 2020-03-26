@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .logo {
     align-self: flex-start;
-    height: 250px;
+    height: 220px;
   }
   .nav-container {
     width: 100%;
@@ -76,6 +76,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 50%;
     overflow: auto;
     font-size: 2.5vh;
+    font-weight: bold;
   }
   @media screen and (max-width: 600px) {
     .content-container {
@@ -180,5 +181,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
+  }
+  button {
+    margin-left: auto
   }
 `

@@ -45,14 +45,14 @@ class App extends React.Component {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
           <GlobalStyles />
-          <Toggle theme={theme} toggleTheme={this.changeTheme}/>
+            <Toggle theme={theme} toggleTheme={this.changeTheme} />
           <div className="logo-container">
             <Link to="/">
               <img src={logo} alt="logo" className="logo" />
             </Link>
           </div>
           <div className="nav-container">
-            <NavBar class={navName}/>
+            <NavBar class={navName} />
           </div>
           <div className="content-container">
             <Switch>
@@ -63,7 +63,7 @@ class App extends React.Component {
             </Switch>
           </div>
           <div className={'footer-container'}>
-            <Footer class={footerName}/>
+            <Footer class={footerName} />
           </div>
         </div>
       </ThemeProvider>
