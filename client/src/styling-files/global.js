@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
   .toggle-component {
-    float: right;
+    margin-right: 0px;
   }
   .logo {
     align-self: flex-start;
