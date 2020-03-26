@@ -18,6 +18,9 @@ export const GlobalStyles = createGlobalStyle`
   body, #root, html{
     height: 100%;
   }
+  .toggle-component {
+    float: right;
+  }
   .logo {
     align-self: flex-start;
     height: 220px;

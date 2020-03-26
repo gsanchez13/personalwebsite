@@ -5,7 +5,7 @@ import { IoIosSunny, IoIosMoon } from 'react-icons/io';
 
 const Toggle = ({ toggleTheme }) => {
   return (
-    <ToggleContainer onClick={toggleTheme}>
+    <ToggleContainer onClick={toggleTheme} className="toggle-component">
       <IoIosSunny style={{color: "yellow"}}/>
       <IoIosMoon style={{color: "yellow"}}/>
     </ToggleContainer>
