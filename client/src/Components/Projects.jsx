@@ -14,14 +14,18 @@ class Projects extends Component {
                 codeLink: 'https://github.com/gsanchez13/ghibli_movieapp'
             },
         ]
-        const projectCard = (thumbnails) => {
+        const projectCards = projectThumbnails.map((thumbnail) => {
+            return (
+                <div className='project-card'>
+                    <img src={thumbnail.source} alt='example' />
+                    <a href={thumbnail.codeLink} target="_self" className='project-link'>Code</a>
+                </div>
+        )  
+        })
 
-        }
         return (
             <div className="projects-div">
-                <a href="https://github.com/gsanchez13/ethicattire_hackathon" target="_self" className="project-code">Ehtic Attire</a>
-                <a href="https://github.com/gsanchez13/marathoner_movieapp" target="_self" className="project-code">Marathoner</a>
-                <a href="https://github.com/gsanchez13/ghibli_movieapp" target="_self" className="project-code">Ghibli Movieapp</a>
+                {projectCards}
             </div>
         )
     }
