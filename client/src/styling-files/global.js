@@ -173,10 +173,14 @@ export const GlobalStyles = createGlobalStyle`
   .projects-div {
     width: 50%;
     display: flex;
+    flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+.project-card {
+  display: flex;
+  flex-flow: column
+}
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
