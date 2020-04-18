@@ -7,17 +7,17 @@ const ToggleContainer = styled.button`
   cursor: pointer;
   display: flex;
   font-size: auto;
-  justify-content: space-between;
+  height: 8%;
+  justify-content: center;
   margin: 0 auto;
   overflow: hidden;
   padding: 3px;
   position: relative;
-  width: 10%;
-  height: 8%;
+  width: 40px;
 
   svg {
     height: 100%;
-    width: 30%;
+    width: 50%;
     transition: all 0.3s linear;
   } 
 `;

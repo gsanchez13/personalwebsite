@@ -28,6 +28,7 @@ class App extends React.Component {
         logo: require('./giselledark.png'),
         navName: 'dark-nav',
         footerName: 'dark-footer',
+        iconColor: 'yellow'
       })
     }
     else {
@@ -36,16 +37,19 @@ class App extends React.Component {
         logo: require('./giselle.png'),
         navName: 'light-nav',
         footerName: 'light-footer',
+        iconColor: 'grey'
       })
     }
   };
   render() {
-    const { logo, theme, navName, footerName } = this.state;
+
+    const { logo, theme, navName, footerName, iconColor} = this.state;
+    console.log('iconcolor', iconColor)
     return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
           <GlobalStyles />
-            <Toggle theme={theme} toggleTheme={this.changeTheme} />
+            <Toggle theme={theme} toggleTheme={this.changeTheme} iconColor={iconColor}/>
           <div className="logo-container">
             <Link to="/">
               <img src={logo} alt="logo" className="logo" />
