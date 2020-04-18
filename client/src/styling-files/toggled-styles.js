@@ -7,7 +7,7 @@ const ToggleContainer = styled.button`
   cursor: pointer;
   display: flex;
   font-size: auto;
-  height: 8%;
+  height: 10%;
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
@@ -16,7 +16,7 @@ const ToggleContainer = styled.button`
   width: 40px;
 
   svg {
-    height: 100%;
+    height: 90%;
     width: 50%;
     transition: all 0.3s linear;
   } 
