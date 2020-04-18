@@ -18,8 +18,14 @@ export const GlobalStyles = createGlobalStyle`
   body, #root, html{
     height: 100%;
   }
+  // @media screen and (max-width: 600px) {
+  //   .App, body, #root, html {
+  //     height: 100vh
+  //   }
+  // }
   .toggle-component {
-    margin-right: 0px;
+    margin-right: 10px;
+    margin-top: 20px;
   }
   .logo {
     align-self: flex-start;
@@ -82,13 +88,13 @@ export const GlobalStyles = createGlobalStyle`
     margin: auto;
     height: 100%;
     width: 50%;
-    overflow: auto;
     font-size: 2.5vh;
     font-weight: bold;
   }
   @media screen and (max-width: 600px) {
     .content-container {
       font-size: 15px;
+      overflow: auto;
     }
   }
   .footer-container {
@@ -97,6 +103,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     font-size: 3vh;
     bottom: 0;
+    margin-bottom: 0px
   }
   @media screen and (max-width: 600px) {
     .footer-container {
@@ -133,14 +140,19 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .skills-icon-div{
-    display: flex;
-    flex-flow: column;
-  }
+  // .skills-icon-div{
+  //   display: flex;
+  //   flex-flow: column;
+  // }
   .iconClass {
     font-size: 9vh;
+  }
+  @media screen and (max-width: 600px){
+    .iconClass {
+      font-size: 6vh;
+    }
   }
   .about-blurb {
     text-align: center;
@@ -176,7 +188,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   .projects-div {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -185,6 +197,9 @@ export const GlobalStyles = createGlobalStyle`
 .project-card {
   display: flex;
   flex-flow: column
+}
+.project-image {
+  width: 60%
 }
   body {
     background: ${({ theme }) => theme.body};

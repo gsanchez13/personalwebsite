@@ -6,8 +6,7 @@ class About extends Component {
         return (
             <div className="about-div">
                 <div className="about-blurb">
-                    I am a born and raised Brooklyner who loves soccer, biking, swimming, dogs, food and all the sunshine I can get.
-                <br />I write code and make cool things happen. Reach out!
+                    Born and raised in Brooklyn with a background in international business, I decided to change careers and get into coding. 
             </div>
                 <br />
                 <br />

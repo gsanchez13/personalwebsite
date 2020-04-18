@@ -17,7 +17,7 @@ class Projects extends Component {
         const projectCards = projectThumbnails.map((thumbnail) => {
             return (
                 <div className='project-card'>
-                    <img src={thumbnail.source} alt='example' />
+                    <img src={thumbnail.source} alt='example' className='project-image'/>
                     <a href={thumbnail.codeLink} target="_self" className='project-link'>Code</a>
                 </div>
         )  
