@@ -151,7 +151,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .about-div {
     width: 100%;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-flow: column;
   }
@@ -204,8 +204,22 @@ export const GlobalStyles = createGlobalStyle`
   button {
     margin-left: auto
   }
-  .about-blurb > a {
-      text-decoration: none;
+  .about-blurb-light > a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.25s linear;
+  }
+  .about-blurb-light > a:hover {
+    color: lightblue;
+  }
+  .about-blurb-dark > a {
+    text-decoration: none;
+    color: white;
+    hover: yellow;
+    transition: all 0.25s linear;
+  }
+  .about-blurb-dark > a:hover {
+    color: yellow;
   }
 }
 `
