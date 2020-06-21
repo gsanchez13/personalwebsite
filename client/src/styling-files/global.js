@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: space-evenly;
     flex-flow: column;
     font-family: 'Baloo 2', cursive;
-    min-height: 100%;
+    min-height: 90%;
     margin-bottom: -50px
   }
   body, #root, html{
@@ -80,6 +80,7 @@ export const GlobalStyles = createGlobalStyle`
     color: yellow;
   }
   .content-container {
+    padding-top: 15px;
     margin: auto;
     height: 100%;
     width: 50%;
@@ -203,9 +204,8 @@ export const GlobalStyles = createGlobalStyle`
   button {
     margin-left: auto
   }
-  a:link, a:visited {
+  .about-blurb > a {
       text-decoration: none;
-      color: black;
   }
 }
 `

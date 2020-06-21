@@ -44,7 +44,6 @@ class App extends React.Component {
   render() {
 
     const { logo, theme, navName, footerName, iconColor} = this.state;
-    console.log('iconcolor', iconColor)
     return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
         <div className="App" >
