@@ -26,7 +26,7 @@ const App = () => {
         logo: require('./giselledark.png'),
         navName: 'dark-nav',
         footerName: 'dark-footer',
-        iconColor: 'yellow',
+        iconColor: 'gold',
         aboutBlurb: 'about-blurb-dark'
       })
     }
