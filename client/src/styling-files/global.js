@@ -11,7 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
-    // margin: auto;
     font-family: 'Baloo 2', cursive;
     min-height: 100%;
     margin-bottom: -50px
@@ -81,7 +80,6 @@ export const GlobalStyles = createGlobalStyle`
     color: yellow;
   }
   .content-container {
-    padding-top: 5%;
     margin: auto;
     height: 100%;
     width: 50%;
@@ -139,10 +137,6 @@ export const GlobalStyles = createGlobalStyle`
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  // .skills-icon-div{
-  //   display: flex;
-  //   flex-flow: column;
-  // }
   .iconClass {
     font-size: 9vh;
   }
@@ -191,13 +185,13 @@ export const GlobalStyles = createGlobalStyle`
     flex-wrap: wrap;
     justify-content: space-between;
   }
-.project-card {
+  .project-card {
   display: flex;
   flex-flow: column
-}
-.project-image {
+  }
+  .project-image {
   width: 60%
-}
+  }
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
