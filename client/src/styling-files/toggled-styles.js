@@ -7,7 +7,7 @@ const ToggleContainer = styled.button`
   cursor: pointer;
   display: flex;
   font-size: auto;
-  height: 10%;
+  height: 15%;
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
