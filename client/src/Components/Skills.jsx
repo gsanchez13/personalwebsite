@@ -45,7 +45,7 @@ class Skills extends Component {
         ]
         const jsxIcons = iconArr.map((el) => {
             return (
-                <div className="skills-icon-card">
+                <div className="skills-icon-card" key={el.caption}>
                     <el.icon style={{color: el.color}} className={el.class}/>
                     <p>{el.caption}</p>
                 </div>
