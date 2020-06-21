@@ -77,7 +77,7 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
   .dark-nav > a:hover{
-    color: yellow;
+    color: gold;
   }
   .content-container {
     padding-top: 15px;
@@ -130,7 +130,7 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
   }
   .dark-footer > a:hover {
-    color: teal;
+    color: gold;
   }
   .skills-div {
     display: flex;
@@ -214,12 +214,12 @@ export const GlobalStyles = createGlobalStyle`
   }
   .about-blurb-dark > a {
     text-decoration: none;
-    color: white;
-    hover: yellow;
+    color: lightgrey;
+    hover: gold;
     transition: all 0.25s linear;
   }
   .about-blurb-dark > a:hover {
-    color: yellow;
+    color: gold;
   }
 }
 `
