@@ -212,4 +212,9 @@ export const GlobalStyles = createGlobalStyle`
   button {
     margin-left: auto
   }
+  a:link, a:visited {
+      text-decoration: none;
+      color: black;
+  }
+}
 `
