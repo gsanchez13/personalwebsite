@@ -11,18 +11,15 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
-    height: 100%;
-    margin: auto;
+    // margin: auto;
     font-family: 'Baloo 2', cursive;
+    min-height: 100%;
+    margin-bottom: -50px
   }
   body, #root, html{
     height: 100%;
+    margin: 0
   }
-  // @media screen and (max-width: 600px) {
-  //   .App, body, #root, html {
-  //     height: 100vh
-  //   }
-  // }
   .toggle-component {
     margin-right: 10px;
     margin-top: 20px;
@@ -103,7 +100,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     font-size: 3vh;
     bottom: 0;
-    margin-bottom: 0px
+    margin-bottom: -50px
   }
   @media screen and (max-width: 600px) {
     .footer-container {
