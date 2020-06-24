@@ -180,18 +180,33 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   .projects-div {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .project-card {
-  display: flex;
-  flex-flow: column
+    display: inline-block;
+    margin-left: 15%;
   }
   .project-image {
-  width: 60%
+    width: 100%;
+  }
+  .project-overlay {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 60%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .project-image:hover .project-overlay {
+    opacity: 1
   }
   body {
     background: ${({ theme }) => theme.body};

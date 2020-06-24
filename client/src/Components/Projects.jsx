@@ -12,7 +12,9 @@ class Projects extends Component {
             return (
                 <div className='project-card' key={thumbnail.projectName}>
                     <img src={thumbnail.source} alt={thumbnail.projectName} className='project-image' />
-                    <a href={thumbnail.codeLink} target="_self" className='project-link'>Code</a>
+                    <div className='project-overlay'>
+                        <a href={thumbnail.codeLink} target="_self" className='project-link'>Code</a>
+                    </div>
                 </div>
             )
         })
