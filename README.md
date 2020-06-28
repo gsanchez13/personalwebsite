@@ -20,4 +20,4 @@
 
 * Disappearing/ reappearing gifs that correlate to hobbies in About
 
-* Dark mode toggle
+* Dark mode toggle on upper corner
