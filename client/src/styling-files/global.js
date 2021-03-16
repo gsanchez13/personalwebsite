@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Arial', cursive;
     min-height: 90%;
     margin-bottom: -50px
   }
@@ -85,7 +85,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
     width: 50%;
     font-size: 2.5vh;
-    font-weight: bold;
+    font-weight: light;
   }
   @media screen and (max-width: 600px) {
     .content-container {

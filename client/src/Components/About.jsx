@@ -7,7 +7,7 @@ const About = (props) => {
             <div className="about-div">
                 <div className={aboutClass}>
                     Born and raised in Brooklyn with a background in International Business, I decided to change careers and get into coding. I was admitted into 
-                    <a href='https://www.pursuit.org/' target='_blank' rel='noopener noreferrer'> Pursuit </a>where I learned programming languages like JavaScript, SQL, HTML and CSS. I enjoy playing soccer, cycling, reading and playing the ukulele when I'm not coding. As a full-stack web developer, I look forward to working on projects with energy, passion and an open mind! 
+                    <a href='https://www.pursuit.org/' target='_blank' rel='noopener noreferrer'> Pursuit</a>, where I learned programming languages like JavaScript, SQL, HTML and CSS. Currently, I am working with Citi as a Technology Analyst. In my free time, I enjoy playing soccer, cycling, reading, traveling and trying any new sport or hobby. As a Full-Stack Web Developer, I look forward to working on projects with energy, passion and an open mind (+= a cup of coffee)!
             </div>
                 <br />
                 <div className="route">

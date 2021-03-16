@@ -7,6 +7,9 @@ class Landing extends Component {
                 Welcome. 
                 <br/>
                 My name is Giselle Sanchez, a software developer based in NYC.
+                <br/>
+                <br/>
+                Drop an email or connect with me on LinkedIn below!
             </div>
         )
     }

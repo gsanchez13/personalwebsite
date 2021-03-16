@@ -3,7 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Landing from './Components/Landing';
 import About from './Components/About';
-import Projects from './Components/Projects';
+// import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
 import Toggle from './Components/Toggle';
@@ -59,7 +59,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path="/about" render={() => (<About aboutClass={aboutBlurb}/>)}/>
-            <Route exact path="/projects" component={Projects} />
+            {/* <Route exact path="/projects" component={Projects} /> */}
             <Route exact path="/skills" component={Skills} />
           </Switch>
         </div>

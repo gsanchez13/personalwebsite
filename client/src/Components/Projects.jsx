@@ -21,7 +21,9 @@ class Projects extends Component {
 
         return (
             <div className="projects-div">
+                <ol className='carousel indicators'>
                 {projectCards}
+                </ol>
             </div>
         )
     }
