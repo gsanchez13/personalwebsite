@@ -27,9 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     align-self: flex-start;
     height: 220px;
   }
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 400px){
     .logo {
-      height: 190px;
+      height: 200px;
     }
   }
   .nav-container {
