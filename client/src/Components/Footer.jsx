@@ -3,7 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { IoLogoGithub } from 'react-icons/io';
 import { GoFile } from 'react-icons/go';
-import Pdf from './Resume.pdf';
+import Pdf from './resume.pdf';
 
 class Footer extends Component {
     render() {
@@ -17,7 +17,7 @@ class Footer extends Component {
                 <a href="https://github.com/gsanchez13" target="_self" rel="noopener norefferrer">
                     <IoLogoGithub />
                 </a>
-                <a href='Resume.pdf' target="_blank" rel="noopener noreferrer">
+                <a href={Pdf} target="_blank" rel="noopener noreferrer">
                     <GoFile />
                 </a>
             </div>
