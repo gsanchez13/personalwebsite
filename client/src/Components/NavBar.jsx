@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Pdf from './resume.pdf';
+import Pdf from '../Documents/Resume2022.pdf';
 
 class NavBar extends Component {
     render() {

@@ -3,7 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { IoLogoGithub } from 'react-icons/io';
 import { GoFile } from 'react-icons/go';
-import Pdf from './resume.pdf';
+import Pdf from '../Documents/Resume2022.pdf';
 
 class Footer extends Component {
     render() {
