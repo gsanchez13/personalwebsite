@@ -89,8 +89,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   @media screen and (max-width: 600px) {
     .content-container {
+      height: 250px;
       font-size: 15px;
-      overflow: auto;
+      overflow: scroll;
     }
   }
   .footer-container {
