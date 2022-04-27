@@ -9,7 +9,7 @@ class Footer extends Component {
     render() {
         return (
             <div className={this.props.class}>
-                <a href="https://www.linkedin.com/in/giselle-sanchez13" target="_self" rel="noopener norefferrer">
+                <a href="https://www.linkedin.com/in/gsanchez13/" target="_self" rel="noopener norefferrer">
                     <FaLinkedin /></a>
                 <a href="mailto:gisellesanchez@pursuit.org?subject=Let's get in contact&body=Hello">
                 <AiOutlineMail />
