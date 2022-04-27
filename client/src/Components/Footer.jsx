@@ -17,7 +17,7 @@ class Footer extends Component {
                 <a href="https://github.com/gsanchez13" target="_self" rel="noopener norefferrer">
                     <IoLogoGithub />
                 </a>
-                <a href={Pdf} target="_blank" rel="noopener noreferrer">
+                <a href='Resume.pdf' target="_blank" rel="noopener noreferrer">
                     <GoFile />
                 </a>
             </div>
