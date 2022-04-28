@@ -105,7 +105,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   @media screen and (max-width: 600px) {
     .footer-container {
-      font-size: 2vh;
+      font-size: 3vh;
     }
   }
   .light-footer {
