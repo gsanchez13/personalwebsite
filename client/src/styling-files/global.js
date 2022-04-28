@@ -161,13 +161,6 @@ export const GlobalStyles = createGlobalStyle`
     width: 30%;
     align-self: center;
   }
-  .gif-container {
-    position: relative;
-    animation:go 4s infinite normal;
-  }
-  .soccer-ball {
-    animation:spin .5s linear infinite;
-  }
   @keyframes spin { 
     100% { 
       -webkit-transform: rotate(360deg); transform:rotate(360deg)
