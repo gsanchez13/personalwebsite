@@ -6,7 +6,7 @@ class Landing extends Component {
             <div className="landing-div">
                 Welcome. 
                 <br/>
-                Myy name is Giselle Sanchez, a software developer based in NYC.
+                My name is Giselle Sanchez, a software developer based in NYC.
                 <br/>
             </div>
         )
