@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     align-self: flex-start;
     height: 220px;
   }
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 600px){
     .logo {
       height: 200px;
     }
@@ -92,6 +92,7 @@ export const GlobalStyles = createGlobalStyle`
       height: 250px;
       font-size: 15px;
       overflow: scroll;
+      margin-top: 5%;
     }
   }
   .footer-container {
